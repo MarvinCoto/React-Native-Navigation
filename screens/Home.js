@@ -12,9 +12,9 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.moduleBox}>
-        <Text style={styles.moduleTitle}>Nombre del Módulo</Text>
+        <Text style={styles.moduleTitle}>Desarrollo de componentes para dispositivos móviles</Text>
         <Text style={styles.moduleDescription}>
-          Aquí va una breve descripción del módulo o funcionalidad.
+          Módulo para el desarrollo de aplicaciones móviles con las herramientas de React Native con Expo
         </Text>
         <TouchableOpacity style={styles.button} onPress={goToProfile}>
           <Text style={styles.buttonText}>Ir al perfil</Text>
