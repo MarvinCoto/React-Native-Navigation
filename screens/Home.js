@@ -3,8 +3,11 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const HomeScreen = () => {
+
+  //Defino una constante para utilizar la función de navegación
   const navigation = useNavigation();
 
+  //Creo una función para navegar hacía el apartado de perfil
   const goToProfile = () => {
     navigation.navigate('Profile');
   };
@@ -12,18 +15,23 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.moduleBox}>
+        
         <Text style={styles.moduleTitle}>Desarrollo de componentes para dispositivos móviles</Text>
         <Text style={styles.moduleDescription}>
           Módulo para el desarrollo de aplicaciones móviles con las herramientas de React Native con Expo
         </Text>
+
+        {/*Boton para navegar hacía el apartado de perfil*/}
         <TouchableOpacity style={styles.button} onPress={goToProfile}>
           <Text style={styles.buttonText}>Ir al perfil</Text>
         </TouchableOpacity>
+
       </View>
     </View>
   );
 };
 
+//Estilos de la pantalla
 const styles = StyleSheet.create({
   container: {
     flex: 1,

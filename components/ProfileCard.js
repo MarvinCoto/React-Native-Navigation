@@ -3,6 +3,8 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 
 const ProfileCard = ({ nombre, edad, foto }) => {
   return (
+
+    //Empleamiento de los elementos que tendrá la card y definición de los props reutilizables
     <View style={styles.card}>
       <Image
         source={foto}
@@ -18,6 +20,7 @@ const ProfileCard = ({ nombre, edad, foto }) => {
   );
 };
 
+//Estilos de la card
 const styles = StyleSheet.create({
   card: {
     backgroundColor: '#FDBB30', 

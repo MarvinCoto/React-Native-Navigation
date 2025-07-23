@@ -5,16 +5,22 @@ import { useNavigation } from '@react-navigation/native';
 
 const ProfileScreen = () => {
 
+  //Defino una constante para utilizar la función de navegación
   const navigation = useNavigation();
   
-    const goToProfile = () => {
-      navigation.navigate('Home');
-    };
+  //Creo una función para navegar hacía el apartado de perfil
+  const goToProfile = () => {
+    navigation.navigate('Home');
+  };
   
 
   return (
     <View style={styles.container}>
+        
+      {/*Card del perfil definiendo los props*/}
       <ProfileCard nombre={'Marvin Javier Gutiérrez Coto'} edad={'17'} foto={require('../assets/foto.png')} />
+
+      {/*Boton para navegar hacía el apartado de perfil*/}
       <TouchableOpacity style={styles.button} onPress={goToProfile}>
         <Text style={styles.buttonText}>Ir al Home</Text> 
       </TouchableOpacity>
@@ -23,6 +29,7 @@ const ProfileScreen = () => {
 
 };
 
+//Estilos de la pantalla
 const styles = StyleSheet.create({
   container: {
     flex: 1,
